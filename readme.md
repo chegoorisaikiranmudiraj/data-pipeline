@@ -5,7 +5,7 @@
 <br>
 
 <p>
-An end-to-end data engineering pipeline built with Python, Google Cloud Storage, Google Colab, BigQuery, SQL, and Looker Studio.
+An end-to-end data engineering pipeline built with Python, Google Cloud Storage, Google Colab, BigQuery, SQL, and PowerBI.
 </p>
 
 <br>
