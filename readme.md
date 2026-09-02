@@ -26,7 +26,7 @@ ETL • Data Quality • Cloud Storage • Data Warehouse • SQL Analytics • 
 [![Google Cloud Storage](https://img.shields.io/badge/GCP-Cloud%20Storage-AECBFA?logo=googlecloud&logoColor=white)](https://cloud.google.com/storage)
 [![BigQuery](https://img.shields.io/badge/BigQuery-Data%20Warehouse-669DF6?logo=googlebigquery&logoColor=white)](https://cloud.google.com/bigquery)
 [![SQL](https://img.shields.io/badge/SQL-Analytics-336791?logo=postgresql&logoColor=white)](https://www.w3schools.com/sql/)
-[![Looker Studio](https://img.shields.io/badge/Looker%20Studio-Dashboarding-4285F4?logo=looker&logoColor=white)](https://lookerstudio.google.com/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboarding-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-181717?logo=github&logoColor=white)](https://github.com/)
 
 <br>
@@ -44,9 +44,6 @@ ETL • Data Quality • Cloud Storage • Data Warehouse • SQL Analytics • 
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Running the Pipeline](#running-the-pipeline)
-- [Running Tests](#running-tests)
 - [Pipeline Workflow](#pipeline-workflow)
 
 ---
@@ -96,3 +93,54 @@ flowchart LR
     B --> F[(BigQuery)]
     F --> G[SQL Analysis]
     G --> H[PowerBI Dashboard]
+
+```
+---
+
+## Tech Stack
+
+- **Programming:** Python, Pandas
+- **Cloud Storage:** Google Cloud Storage
+- **Data Warehouse:** Google BigQuery
+- **Analytics:** SQL
+- **Visualization:** Power BI
+- **Development:** Google Colab
+- **Version Control:** Git, GitHub
+
+---
+
+## Project Structure
+
+```text
+retail-sales-etl-pipeline/
+│
+├── README.md
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   └── retail_sales_etl.ipynb
+│
+├── sql/
+│   ├── category_analysis.sql
+│   ├── item_analysis.sql
+│   └── customer_analysis.sql
+│
+└── screenshots/
+    └── dashboard.png
+```
+
+---
+
+## Pipeline Workflow
+
+1. **Ingest**: Python reads raw CSV files from `/sales/retail_sales.csv`.
+2. **Transform**: Data is cleaned, validated, and staged.
+3. **Upload**: Staged data is uploaded to GCS bucket.
+4. **Load**: The processed data is loaded into Bigquery.
+5. **Analyze**: SQL queries analyze sales performance, categories, items, and revenue.
+6. **Validation**: Custom data quality tests confirm data accuracy.
+7. **Cleanup**: Optionally remove temp data for repeatability.
+
+---
