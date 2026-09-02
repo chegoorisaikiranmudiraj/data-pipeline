@@ -5,13 +5,13 @@
 <br>
 
 <p>
-An end-to-end data engineering pipeline built with Python, Google Cloud Storage, Google Colab, BigQuery, SQL, and PowerBI.
+ETL • Data Quality • Cloud Storage • Data Warehouse • SQL Analytics • Dashboarding
 </p>
 
 <br>
 
 <p>
-ETL • Data Quality • Cloud Storage • Data Warehouse • SQL Analytics • Dashboarding
+An end-to-end data engineering pipeline built with Python, Google Cloud Storage, Google Colab, BigQuery, SQL, and PowerBI.
 </p>
 
 <br>
